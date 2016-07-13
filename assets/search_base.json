@@ -1,0 +1,102 @@
+
+[
+
+
+
+    
+    {
+        "title": "Smp_000020",
+        "content": "bifunctional protein NCOAT",
+        "keywords": "K15719",
+        "link": "/sm/Smp_000020.1/",
+        "excerpt": "cl06544, pfam07555",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_000030",
+        "content": "26s proteasome regulatory particle subunit",
+        "keywords": "K03028",
+        "link": "/sm/Smp_000030.1/",
+        "excerpt": "cl06544, pfam07555",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_000040",
+        "content": "kinesin light chain",
+        "keywords": "K10407",
+        "link": "/sm/Smp_000040.1/",
+        "excerpt": "COG0457, COG3063, COG3071, TIGR02521, TIGR02795, cd00189, cl22441, pfam09311, pfam13374, pfam13424, smart00028",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_000050",
+        "content": "transient receptor potential cation channel",
+        "keywords": "ns",
+        "link": "/sm/Smp_000050.1/",
+        "excerpt": "COG0666, PHA02874, TIGR00870, cd00204, cd03670, cl00447, cl02529, pfam00023, pfam00520, pfam12796",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_004810",
+        "content": "protein phosphatase type 1",
+        "keywords": "K06269",
+        "link": "/sm/Smp_004810.3/",
+        "excerpt": "COG0639, PHA02239, PRK00166, PRK09968, PTZ00480, TIGR04075, cd07414, cl13995, pfam00149, smart00156",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_028990",
+        "content": "protein phosphatase 1",
+        "keywords": "K06269",
+        "link": "/sm/Smp_028990.1/",
+        "excerpt": "COG0639, PHA02239, PRK00166, PRK11439, PTZ00480, TIGR04075, cd07414, cl13995, pfam00149, smart00156",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_035580",
+        "content": "serine:threonine protein phosphatase PP1 beta",
+        "keywords": "K06269",
+        "link": "/sm/Smp_035580.1/",
+        "excerpt": "COG0639, PHA02239, PRK00166, PRK09968, PTZ00480, TIGR04075, cd07414, cl13995, pfam00149, smart00156",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Smp_199620",
+        "content": "serine:threonine protein phosphatase PP1",
+        "keywords": "ns",
+        "link": "/sm/Smp_199620.1/",
+        "excerpt": "PTZ00480, cd07414, cl13995, smart00156",
+        "search_omit": ""
+    }
+    
+    
+
+]

@@ -1,0 +1,97 @@
+@import url("//fonts.googleapis.com/css?family=Oswald:400,700,300");
+html, body {
+  overflow-x: hidden;
+  font-family: "Comic Sans MS", Monospace, Helvetica; }
+
+body {
+  margin-bottom: 0px; }
+
+.navbar-top {
+  min-height: 0;
+  margin-bottom: 0;
+  z-index: 1100; }
+  .navbar-top .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .navbar-top .navbar-right {
+    margin-right: 0; }
+
+.navbar-main {
+  font-size: 1.35em;
+  border: 0;
+  background: #dcecfc; }
+  .navbar-main .navbar-brand {
+    font-weight: bold;
+    color: #008080; }
+
+.section-head {
+  font: 300 2em/1 'Oswald', sans-serif;
+  margin-bottom: 20px;
+  border-bottom: 1px #DDD solid;
+  padding-bottom: 5px;
+  color: #c6c6c6; }
+
+.label-onsale {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  line-height: 1;
+  padding: 3px 8px;
+  transform: rotate(-45deg); }
+
+.grid-img-outer {
+  height: 220px;
+  background: url("/img/loader.gif") 50% 50% no-repeat #fff;
+  border-radius: 4px;
+  display: block;
+  overflow: hidden; }
+  .grid-img-outer > img {
+    width: 70%; }
+
+.search-bar > form {
+  margin-bottom: 20px; }
+
+textarea {
+  width: 35%;
+  height: 8em; }
+
+.site-footer {
+  background: #eee;
+  padding-bottom: 0.2cm; }
+
+a:hover {
+  color: #ff1010; }
+
+#landing {
+  margin-top: 20%;
+  margin-bottom: 20%; }
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }

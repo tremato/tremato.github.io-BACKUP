@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign article = site.data.blog.articles.first %}
+
+{% assign current_tags = article.tags %}
+
+{% assign number_of_comments = site.data.blog.articles.first.comments.size %}
+
+
+<div class="row">
+  <div class="col-md-9">
+   <h3>{{ page.title }}</h3>
+        {% capture date %}{{ page.pdate }}{% endcapture %}
+          <span> Date: {{ date }}</span>
+  </div>
+
+  <div class="col-md-9" itemscope itemtype="http://schema.org/Article">
+<hr>
+    <div itemprop="articleBody" class="text-justify">
+      <big>{{ content }}</big>
+    </div>
+
+    {% if page.comments == true %}
+      {% include comments.html %}
+    {% endif %}
+
+  </div>
+
+  <div class="col-md-3" role="complementary">
+    {% include blog-sidebar.html %}
+  </div>
+</div>

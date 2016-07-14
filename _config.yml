@@ -1,0 +1,29 @@
+# Site settings
+title: "Tremato.de"
+email: herrloo@icloud.com
+description: > # this means to ignore newlines until "baseurl:"
+  Available resources for trematode research.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: luzg2008
+github_username:  izglu
+
+# Build settings
+markdown: kramdown
+
+# permalink conficts with pagination
+#permalink: none
+
+
+
+# Exclude directories and/or files from the conversion.
+exclude: []
+
+# Collections
+collections:
+  genes:
+    output: true
+    permalink: /:categories/:title/
+
+# gems
+#gems: [jekyll-paginate]

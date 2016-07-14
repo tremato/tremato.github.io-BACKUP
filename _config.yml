@@ -23,7 +23,7 @@ exclude: []
 collections:
   genes:
     output: true
-    permalink: /:path/
+    permalink: /:categories/:title/
 
 # gems
 #gems: [jekyll-paginate]

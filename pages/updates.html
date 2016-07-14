@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Updates"
+permalink: "/updates/"
+---
+
+<div class="page-header">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<center><div class="row">
+
+    {% for article in site.posts %}
+      <div class="page-header">
+        <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+        {% capture author %}{{ article.author }}{% endcapture %}
+        {% capture date %}{{ article.pdate }}{% endcapture %}
+        <ul class="list-inline text-muted">
+          <li><span class="glyphicon glyphicon-user">{{ author }}</span></li>
+          <li><span class="glyphicon glyphicon-calendar">{{ date }}</span></li>
+          {% if article.tags.size > 0 %}
+            <li><span class="glyphicon glyphicon-tags">{% include tags-article.html %}</span></li>
+          {% endif %}
+        </ul><br>
+        {% if article.excerpt.size > 0 %}
+          {{ article.excerpt }}
+        {% else %}
+          <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+        {% endif %}
+      <p><a href="{{ article.url }}"> More &rarr;</a></p>
+      </div>
+
+    {% if paginator.total_pages > 1 %} 
+      <div class="text-center">
+        {% include pagination-custom.html %}
+      </div>
+    {% endif %}
+    {% endfor %}
+
+</div></center>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+

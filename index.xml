@@ -20,13 +20,13 @@
 	  </itunes:category>
 	  <itunes:keywords>Philosophy, Logic, mathematics, pdf, research, University, Greg Restall, Melbourne, Australia, Victoria</itunes:keywords>
 	  <itunes:explicit>no</itunes:explicit>
-	  <itunes:image href="//img/avatar2.jpg" />
+	  <itunes:image href="/img/avatar2.jpg" />
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>/</link>
     <language>en-us</language>
     
     
-    <updated>Sat, 16 Jul 2016 00:04:18 CEST</updated>
+    <updated>Sat, 16 Jul 2016 01:11:20 CEST</updated>
 
 
 <item>
@@ -147,6 +147,38 @@
 <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
 <guid>/sm00/Smp_000020.1/</guid>
 <description></description>
+</item>
+    
+<item>
+<title>SContact</title>
+<link>/contact/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+<guid>/contact/</guid>
+<description>&lt;p&gt;&lt;h4&gt;&lt;strong&gt;Please fill in the following form.&lt;/strong&gt;&lt;/h4&gt;&lt;br&gt;
+    &lt;form accept-charset=&#34;UTF-8&#34; action=&#34;http://formspree.io/herrloo@icloud.com&#34; class=&#34;contact-form&#34; method=&#34;post&#34;&gt;&lt;input name=&#34;form_type&#34; type=&#34;hidden&#34; value=&#34;contact&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+    &amp;lt;label for=&amp;quot;ContactFormName&amp;quot; class=&amp;quot;hidden-label&amp;quot;&amp;gt;Name&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;name&amp;quot; id=&amp;quot;ContactFormName&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;contact[name]&amp;quot; placeholder=&amp;quot;Your name&amp;quot; autocapitalize=&amp;quot;words&amp;quot; value=&amp;quot;&amp;quot; required /&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+    &amp;lt;label for=&amp;quot;ContactFormEmail&amp;quot; class=&amp;quot;hidden-label&amp;quot;&amp;gt;Email&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;email&amp;quot; id=&amp;quot;ContactFormEmail&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;contact[email]&amp;quot; placeholder=&amp;quot;Your email address&amp;quot; autocorrect=&amp;quot;off&amp;quot; autocapitalize=&amp;quot;off&amp;quot; value=&amp;quot;&amp;quot; required /&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;
+    &amp;lt;label for=&amp;quot;ContactFormMessage&amp;quot; class=&amp;quot;hidden-label&amp;quot;&amp;gt;Message&amp;lt;/label&amp;gt;
+    &amp;lt;textarea rows=&amp;quot;10&amp;quot; id=&amp;quot;ContactFormMessage&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;contact[message]&amp;quot; placeholder=&amp;quot;Your message&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;div class=&amp;quot;form-group text-center&amp;quot;&amp;gt;
+    &amp;lt;button type=&amp;quot;submit&amp;quot; class=&amp;quot;btn btn-primary btn-block&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_next&amp;quot; value=&amp;quot;/msg-sent/&amp;quot;/&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
 </item>
     
   </channel>

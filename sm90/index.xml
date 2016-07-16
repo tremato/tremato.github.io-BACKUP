@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+<channel>
+      <title>Sm90s in Tremato.de </title>
+	  <itunes:subtitle>Greg Restall's publications on logic and philosophy</itunes:subtitle>
+	  <itunes:author>Greg Restall</itunes:author>
+	  <itunes:owner>
+	  <itunes:name>Greg Restall</itunes:name>
+	  <itunes:email>greg@consequently.org</itunes:email>
+	  </itunes:owner>
+	  <itunes:category text="Education">
+	  <itunes:category text="Higher Education"/>
+	  </itunes:category>
+	  <itunes:keywords>Philosophy, Logic, mathematics, pdf, research, University, Greg Restall, Melbourne, Australia, Victoria</itunes:keywords>
+	  <itunes:explicit>no</itunes:explicit>
+	  <itunes:image href="/img/avatar2.jpg" />
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>/sm90/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
+    
+ 
+    <item>
+      <title>Smp_900110</title>
+      <link>/sm90/Smp_900110.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900110.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900100</title>
+      <link>/sm90/Smp_900100.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900100.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900090</title>
+      <link>/sm90/Smp_900090.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900090.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900080</title>
+      <link>/sm90/Smp_900080.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900080.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900070</title>
+      <link>/sm90/Smp_900070.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900070.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900060</title>
+      <link>/sm90/Smp_900060.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900060.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900050</title>
+      <link>/sm90/Smp_900050.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900050.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900040</title>
+      <link>/sm90/Smp_900040.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900040.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900030</title>
+      <link>/sm90/Smp_900030.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900030.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900020</title>
+      <link>/sm90/Smp_900020.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900020.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900010</title>
+      <link>/sm90/Smp_900010.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900010.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+ 
+    <item>
+      <title>Smp_900000</title>
+      <link>/sm90/Smp_900000.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>/sm90/Smp_900000.1/</guid>
+      <description>&lt;![CDATA[]]></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -37,7 +37,8 @@
     <br><br>
 
   <div id="search-bar" class="search-bar animated fadeInUp" style="width:400px">
-    <input id="search" type="search" placeholder="Enter Smp_ number or product">
+    <input id="search" type="search" placeholder="Enter Smp_ Number or Product"><br>
+  <small>e.g. 000050; actin</small>
   </div></center>
 <div style="margin-left: 25%; margin-right: 25%;">
     <p id="results">
@@ -92,7 +93,7 @@
 
             
             var query = $(this).val();
-            if (query.length < 5) {
+            if (query.length < 4) {
                 return;
             }
 
@@ -129,7 +130,7 @@
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» " + result.title + " "
+                text: "» Smp_" + result.title + " "
             }), result.content);
             $results.append($result);
         });

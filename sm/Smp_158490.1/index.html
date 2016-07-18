@@ -4,7 +4,7 @@
     <link href="http://gmpg.org/xfn/11" rel="profile">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Smp_158490</title>
+	<title>Smp_158490 | Tremato.de</title>
     
 	<link rel="stylesheet" href="/css/kube.css" />
 	<link rel="stylesheet" href="/css/demo.css" />
@@ -88,7 +88,7 @@ KEGG Ortholog and Pathway<sup>**</sup>: <em>not found</em>
 <h4 style="color:#008000;">Differential Gene Expression</h4>
 Transcript plots are shown below. Please refer to the original study for details.
 <div id="plots" class="row">
-     	<img class="img-responsive img-thumbnail" src="https://dl.dropboxusercontent.com/u/98419245/plots-ad/Smp_15/Smp_158490.1.png" style="border-style: none" width="48%">
+     	<img class="img-responsive img-thumbnail" src="smb://winfile.hrz.uni-giessen.de/fb10-parasit/Abteilung/07 AG Grevelding/plots-ad/Smp_15/Smp_158490.1.png" style="border-style: none" width="48%">
 	<img class="img-responsive img-thumbnail" src="https://dl.dropboxusercontent.com/u/98419245/plots-la/Smp_15/Smp_158490.png" style="border-style: none" width="48%">
 </div>
 Please cite above results (if shown) as:
@@ -151,7 +151,7 @@ Please cite above results (if shown) as:
 
             
             var query = $(this).val();
-            if (query.length < 2) {
+            if (query.length < 4) {
                 return;
             }
 
@@ -188,7 +188,7 @@ Please cite above results (if shown) as:
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» " + result.title
+                text: "» Smp_" + result.title
             }));
             $results.append($result);
         });

@@ -56,7 +56,7 @@
 <a href="http://www.genedb.org/featureSeq/Smp_186670" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i>
 <br><br><br>
 	<div>Search<br>
-	  <input type="search" id="search" maxlength="255" placeholder="Smp_ or product"><br>
+	  <input type="search" id="search" maxlength="255" placeholder="Smp_ number"><br>
 	<p id="results"></p>
 	</div><br><br>
 	<div>Data Sources<br>
@@ -83,10 +83,10 @@ WormBase Parasite Entry: <a href="http://parasite.wormbase.org/Schistosoma_manso
 UniProt Entry: <strong><a href="http://www.uniprot.org/uniprot/G4VEM7" target=_blank>G4VEM7</a></strong> <i class="fa fa-external-link" style="font-size:60%;"></i>
 
 <h4 style="color:#f6546a;">Functions</h4>
-<p>Conserved domain(s)<sup>*</sup>: CHL00101, CHL00197, COG0044, COG0458, COG0505, COG0512, COG0540, PLN02335, PLN02527, PLN02735, PLN02771, PLN02795, PRK00856, PRK05294, PRK07765, PRK09357, PRK12564, TIGR00566, TIGR00670, TIGR00857, TIGR01368, TIGR01369, cd01316, cd01423, cd01744, cl00020, cl00245, cl00281, cl02837, cl03681, cl17255, cl19748, cl21454, pfam00117, pfam00185, pfam00289, pfam01979, pfam02142, pfam02729, pfam02786, pfam02787, pfam13147, pfam15632, smart00851, smart01096<br>
+<p>Conserved domain(s)<sup>*</sup>: COG0044, COG0118, COG0458, COG0505, COG0540, PRK00856, PRK05294, PRK06849, PRK07765, PRK09060, PRK09357, PRK12564, TIGR00566, TIGR00670, TIGR00857, TIGR01368, TIGR01369, cd01316, cd01423, cd01744, cl00020, cl00245, cl00281, cl03681, cl17255, cl19748, cl21454, pfam00117, pfam00185, pfam01979, pfam02142, pfam02729, pfam02786, pfam02787, pfam13535, pfam15632, smart00851, smart01096<br>
 
-KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K11540" target=_blank><strong>K11540</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i>
-<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 20.02.2015 &nbsp;&nbsp; ** Mapping as of 16.02.2015</small></em>
+KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K11540" target=_blank><strong>K11540</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i> (<a href="http://www.kegg.jp/kegg-bin/view_ortholog_table?orthology=K11540" target=_blank>Ortholog table</a> <i class="fa fa-external-link" style="font-size:60%;"></i>)
+<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 24.07.2016 &nbsp;&nbsp; ** Mapping as of 23.07.2016</small></em>
 </p>
 
 
@@ -117,7 +117,7 @@ Please cite above results (if shown) as:
     
     function initLunr() {
         
-        $.getJSON("/js/lunr/PagesIndex.json")
+        $.getJSON("/js/lunr/PagesIndexSm.json")
             .done(function(index) {
                 pagesIndex = index;
                 console.log("index:", pagesIndex);
@@ -128,10 +128,10 @@ Please cite above results (if shown) as:
                     this.field("title", {
                         boost: 10
                     });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
+                    
+                        
+                    
+                    
 
                     
                     this.ref("href");
@@ -156,7 +156,7 @@ Please cite above results (if shown) as:
 
             
             var query = $(this).val();
-            if (query.length < 4) {
+            if (query.length < 8) {
                 return;
             }
 
@@ -193,7 +193,7 @@ Please cite above results (if shown) as:
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» Smp_" + result.title
+                text: "» " + result.title
             }));
             $results.append($result);
         });

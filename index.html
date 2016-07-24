@@ -37,10 +37,10 @@
     <br><br>
 
   <div id="search-bar" class="search-bar animated fadeInUp" style="width:400px">
-    <input id="search" type="search" placeholder="Enter Smp_ Number or Product"><br>
-  <small>e.g. 000050; actin</small>
+    <input id="search" type="search" placeholder="Enter Gene ID"><br>
+  <small>e.g. Smp_000050; Sjp_0000130</small>
   </div></center>
-<div style="margin-left: 25%; margin-right: 25%;">
+<div style="margin-left: 30%; margin-right: 30%;">
     <p id="results">
     </p>
 </div>
@@ -65,10 +65,10 @@
                     this.field("title", {
                         boost: 10
                     });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
+                    
+                    
+                    
+                    
 
                     
                     this.ref("href");
@@ -93,7 +93,7 @@
 
             
             var query = $(this).val();
-            if (query.length < 4) {
+            if (query.length < 8) {
                 return;
             }
 
@@ -130,7 +130,7 @@
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» Smp_" + result.title + " "
+                text: "» " + result.title + " "
             }), result.content);
             $results.append($result);
         });

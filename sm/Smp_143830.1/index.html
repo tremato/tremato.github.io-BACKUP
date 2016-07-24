@@ -56,7 +56,7 @@
 <a href="http://www.genedb.org/featureSeq/Smp_143830" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i>
 <br><br><br>
 	<div>Search<br>
-	  <input type="search" id="search" maxlength="255" placeholder="Smp_ or product"><br>
+	  <input type="search" id="search" maxlength="255" placeholder="Smp_ number"><br>
 	<p id="results"></p>
 	</div><br><br>
 	<div>Data Sources<br>
@@ -83,10 +83,10 @@ WormBase Parasite Entry: <a href="http://parasite.wormbase.org/Schistosoma_manso
 UniProt Entry: <strong><a href="http://www.uniprot.org/uniprot/G4VSJ8" target=_blank>G4VSJ8</a></strong> <i class="fa fa-external-link" style="font-size:60%;"></i>
 
 <h4 style="color:#f6546a;">Functions</h4>
-<p>Conserved domain(s)<sup>*</sup>: COG0318, PLN02246, PRK08279, PTZ00237, TIGR01923, cd05939, cl17068, pfam00501<br>
+<p>Conserved domain(s)<sup>*</sup>: COG0318, PRK00174, PRK08279, TIGR01733, TIGR01923, cd05939, cl17068, pfam00501<br>
 
-KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K08745" target=_blank><strong>K08745</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i>
-<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 20.02.2015 &nbsp;&nbsp; ** Mapping as of 16.02.2015</small></em>
+KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K08745" target=_blank><strong>K08745</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i> (<a href="http://www.kegg.jp/kegg-bin/view_ortholog_table?orthology=K08745" target=_blank>Ortholog table</a> <i class="fa fa-external-link" style="font-size:60%;"></i>)
+<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 24.07.2016 &nbsp;&nbsp; ** Mapping as of 23.07.2016</small></em>
 </p>
 
 
@@ -117,7 +117,7 @@ Please cite above results (if shown) as:
     
     function initLunr() {
         
-        $.getJSON("/js/lunr/PagesIndex.json")
+        $.getJSON("/js/lunr/PagesIndexSm.json")
             .done(function(index) {
                 pagesIndex = index;
                 console.log("index:", pagesIndex);
@@ -128,10 +128,10 @@ Please cite above results (if shown) as:
                     this.field("title", {
                         boost: 10
                     });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
+                    
+                        
+                    
+                    
 
                     
                     this.ref("href");
@@ -156,7 +156,7 @@ Please cite above results (if shown) as:
 
             
             var query = $(this).val();
-            if (query.length < 4) {
+            if (query.length < 8) {
                 return;
             }
 
@@ -193,7 +193,7 @@ Please cite above results (if shown) as:
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» Smp_" + result.title
+                text: "» " + result.title
             }));
             $results.append($result);
         });

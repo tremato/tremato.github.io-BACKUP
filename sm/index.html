@@ -52,7 +52,7 @@
 <div class="unit-20 dateblock">
 	<a href="http://www.genedb.org/blast/submitblast/GeneDB_Smansoni" target=_blank>Blast Server</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br><br><br>
 	<div>Search<br>
-	  <input type="search" id="search" maxlength="255" placeholder="Smp_ or product">
+	  <input type="search" id="search" maxlength="255" placeholder="Smp_ number">
 	<p id="results"></p></div><br>
 	<div>Data Sources<br>
 	<a href='http://parasite.wormbase.org/' target=_blank>WB Parasite</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br>
@@ -66,10 +66,11 @@
 <h4><strong><em>Schistosoma mansoni</em></strong></h4>
 <h5>Stats</h5>
 <ul>
-<li>10,818 genes recorded</li>
-<li>7,516 with conserved domain(s)</li>
-<li>3,237 with ortholog in KEGG database</li>
-<li>10,784 with entry in UniProt</li>
+<li>11,828 transcripts</li>
+<li>8,480 with conserved domain(s)</li>
+<li>3,734 with ortholog in KEGG database</li>
+<li>Annotation source: GeneDB (version 5.2)</li>
+<li>Sequence source: WormBase Parasite (version WBPS6)</li>
 </ul>
 </div>
 	
@@ -86,7 +87,7 @@
     
     function initLunr() {
         
-        $.getJSON("/js/lunr/PagesIndex.json")
+        $.getJSON("/js/lunr/PagesIndexSm.json")
             .done(function(index) {
                 pagesIndex = index;
                 console.log("index:", pagesIndex);
@@ -97,10 +98,10 @@
                     this.field("title", {
                         boost: 10
                     });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
+                    
+                        
+                    
+                    
 
                     
                     this.ref("href");
@@ -125,7 +126,7 @@
 
             
             var query = $(this).val();
-            if (query.length < 4) {
+            if (query.length < 8) {
                 return;
             }
 
@@ -162,7 +163,7 @@
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» Smp_" + result.title
+                text: "» " + result.title
             }));
             $results.append($result);
         });

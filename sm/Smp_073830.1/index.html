@@ -56,7 +56,7 @@
 <a href="http://www.genedb.org/featureSeq/Smp_073830" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i>
 <br><br><br>
 	<div>Search<br>
-	  <input type="search" id="search" maxlength="255" placeholder="Smp_ or product"><br>
+	  <input type="search" id="search" maxlength="255" placeholder="Smp_ number"><br>
 	<p id="results"></p>
 	</div><br><br>
 	<div>Data Sources<br>
@@ -83,10 +83,10 @@ WormBase Parasite Entry: <a href="http://parasite.wormbase.org/Schistosoma_manso
 UniProt Entry: <strong><a href="http://www.uniprot.org/uniprot/G4M044" target=_blank>G4M044</a></strong> <i class="fa fa-external-link" style="font-size:60%;"></i>
 
 <h4 style="color:#f6546a;">Functions</h4>
-<p>Conserved domain(s)<sup>*</sup>: COG1234, COG1236, PRK00055, PRK11921, TIGR03675, cl00446, cl06522, cl12567, pfam00753, pfam07521, pfam10996, smart00849, smart01027<br>
+<p>Conserved domain(s)<sup>*</sup>: COG1236, COG1237, PRK00055, PRK11921, TIGR03675, cd16291, cl06522, cl12567, cl23716, pfam07521, pfam10996, pfam16661, smart00849, smart01027<br>
 
-KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K13148" target=_blank><strong>K13148</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i>
-<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 20.02.2015 &nbsp;&nbsp; ** Mapping as of 16.02.2015</small></em>
+KEGG Ortholog and Pathway<sup>**</sup>: <a href="http://www.kegg.jp/dbget-bin/www_bget?ko:K13148" target=_blank><strong>K13148</strong></a> <i class="fa fa-external-link" style="font-size:60%;"></i> (<a href="http://www.kegg.jp/kegg-bin/view_ortholog_table?orthology=K13148" target=_blank>Ortholog table</a> <i class="fa fa-external-link" style="font-size:60%;"></i>)
+<em class="pull-right"><small style="color:#e3e3e3;">* Mapping as of 24.07.2016 &nbsp;&nbsp; ** Mapping as of 23.07.2016</small></em>
 </p>
 
 
@@ -117,7 +117,7 @@ Please cite above results (if shown) as:
     
     function initLunr() {
         
-        $.getJSON("/js/lunr/PagesIndex.json")
+        $.getJSON("/js/lunr/PagesIndexSm.json")
             .done(function(index) {
                 pagesIndex = index;
                 console.log("index:", pagesIndex);
@@ -128,10 +128,10 @@ Please cite above results (if shown) as:
                     this.field("title", {
                         boost: 10
                     });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
+                    
+                        
+                    
+                    
 
                     
                     this.ref("href");
@@ -156,7 +156,7 @@ Please cite above results (if shown) as:
 
             
             var query = $(this).val();
-            if (query.length < 4) {
+            if (query.length < 8) {
                 return;
             }
 
@@ -193,7 +193,7 @@ Please cite above results (if shown) as:
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» Smp_" + result.title
+                text: "» " + result.title
             }));
             $results.append($result);
         });

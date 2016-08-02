@@ -91,7 +91,7 @@ h2 {border-bottom: 1px solid #ecc;}
 }
 
 #topbar {
-	background: #b2e2e0;
+	/* background: #b2e2e0; */
 	padding:0px;
 	margin:0ex;
 	/* border-bottom: 3px solid #b24; */
@@ -104,7 +104,7 @@ h2 {border-bottom: 1px solid #ecc;}
 }  
 
 
-#topbar .navbar {padding-bottom:10px; font-size:135%; font-family:Impact;} 
+#topbar .navbar {padding-bottom:12px; font-size:110%; font-family:Impact;} 
 #topbar li a {color: #008080;}
 #topbar li span a {color: #fff;}
 
@@ -273,7 +273,7 @@ header h1 {	font-size: 24px;
 /*	#header h1 { float: none; text-align:center; font-size: 36px;}*/
 /*	#header nav { float:none; text-align:center;}*/
 	/* #header nav ul li { margin: 0; margin-right: 1em; } */
-	#topbar .navbar {padding-bottom:12px; font-size:120%; }
+	#topbar .navbar {padding-bottom:12px; font-size:110%; }
 	#topbar .navbar li {float:left; margin-left:1.1em;} 
     #banner { text-align: center; margin-bottom: 1.5em; }
 	#footer section, #footer nav { float: none; text-align:center;}

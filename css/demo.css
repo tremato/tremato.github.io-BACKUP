@@ -1,7 +1,7 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-	font-family: 'Alegreya', 'Hoefler Text', Times, Serif;
+	font-family: 'Fenix', Georgia, Times, Serif;
 	font-size: 1.05em;
 	line-height: 1.6em;
 	background-color: #faf8f8;
@@ -18,19 +18,10 @@ form, input[type="search"], select[multiple="multiple"]  {font-family:  'Alegrey
 }
 */
 h1, h2, h3, h4, h5 {
-	font-family: 'Georgia', 'Trebuchet MS', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	color: #b24;
+	font-family: 'Nunito', Helvetica, Arial, sans-serif;
+	color: #0000ff;
 }
-h2, h3, h4, h5 {
-	font-weight: normal;
-	font-style: italic;
-}
-h2, h3 {
-	text-transform: lowercase;
-	font-family: 'Alegreya SC';
-	font-style: normal;
-}
+
 
 .label-red {
   background-color: #b24;

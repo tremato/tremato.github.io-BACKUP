@@ -8,11 +8,11 @@
     <!-- CSS -->
 	<link rel="stylesheet" href="/css/kube.css" />
 	<link rel="stylesheet" href="/css/demo.css" />
- 	<link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
- 	<link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+ 	<link href='https://fonts.googleapis.com/css?family=Fenix:400italic,400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+ 	<link href='https://fonts.googleapis.com/css?family=Nunito:400italic,400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="/css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
  	<link rel="shortcut icon" href="/favicon.ico" />
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,24 +46,18 @@
 <h2>Contact</h2>
 <div >
     <p>Please fill in the following form.</p>
-    <form accept-charset="UTF-8" action="http://formspree.io/herrloo@icloud.com" class="contact-form" method="post"><input name="form_type" type="hidden" value="contact" />
+<form accept-charset="UTF-8" action="http://formspree.io/herrloo@icloud.com" class="contact-form" method="post"><input name="form_type" type="hidden" value="contact" />
 
       <div class="form-group">
         <label for="ContactFormName" class="hidden-label">Name</label>
         <input type="text" id="ContactFormName" class="form-control" name="contact[name]" placeholder="Your name" autocapitalize="words" value="" required />
-      </div>
 
-      <div class="form-group">
         <label for="ContactFormEmail" class="hidden-label">Email</label>
-        <input type="text" id="ContactFormEmail" class="form-control" name="contact[email]" placeholder="Your email address" autocorrect="off" autocapitalize="off" value="" required />
-      </div>
+        <input type="text" id="ContactFormEmail" class="form-control" name="contact[email]" placeholder="Your email address" autocorrect="off" autocapitalize="off" value="" required /><br><br>
 
-      <div class="form-group">
         <label for="ContactFormMessage" class="hidden-label">Message</label>
         <textarea rows="6" id="ContactFormMessage" class="form-control" name="contact[message]" placeholder="Your message"></textarea>
-      </div>
 
-      <div class="form-group text-center">
         <button type="submit" class="btn btn-primary btn-block">Submit</button>
       </div>
 	<input type="hidden" name="_next" value="/msg-sent/"/>

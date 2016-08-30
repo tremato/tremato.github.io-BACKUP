@@ -42,6 +42,7 @@
 
 
 <div class="wrapper">
+<div class="units-row">
 <div class="unit-50">
 <h2>Contact</h2>
 <div >
@@ -49,13 +50,10 @@
 <form accept-charset="UTF-8" action="http://formspree.io/herrloo@icloud.com" class="contact-form" method="post"><input name="form_type" type="hidden" value="contact" />
 
       <div class="form-group">
-        <label for="ContactFormName" class="hidden-label">Name</label>
         <input type="text" id="ContactFormName" class="form-control" name="contact[name]" placeholder="Your name" autocapitalize="words" value="" required />
 
-        <label for="ContactFormEmail" class="hidden-label">Email</label>
-        <input type="text" id="ContactFormEmail" class="form-control" name="contact[email]" placeholder="Your email address" autocorrect="off" autocapitalize="off" value="" required /><br><br>
+        <input type="text" id="ContactFormEmail" class="form-control" name="contact[email]" placeholder="Your email address" autocorrect="off" autocapitalize="off" value="" required />
 
-        <label for="ContactFormMessage" class="hidden-label">Message</label>
         <textarea rows="6" id="ContactFormMessage" class="form-control" name="contact[message]" placeholder="Your message"></textarea>
 
         <button type="submit" class="btn btn-primary btn-block">Submit</button>
@@ -63,7 +61,8 @@
 	<input type="hidden" name="_next" value="/msg-sent/"/>
     </form>
 </div>
-	
+
+</div>	
 </div>
 </div>
 

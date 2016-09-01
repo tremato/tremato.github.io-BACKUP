@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sms on Tremato.de</title>
+    <title>Sms on A minimal site for trematode data</title>
     <link>/sm/</link>
-    <description>Recent content in Sms on Tremato.de</description>
+    <description>Recent content in Sms on A minimal site for trematode data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="/sm/index.xml" rel="self" type="application/rss+xml" />

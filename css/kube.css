@@ -3645,3 +3645,13 @@ ul.dropdown li.divider {
     background: #fff !important;
   }
 }
+
+.table,
+.simpleCart_items table {
+  background: #f1f1f1;
+  line-height: 3px;
+  font-size: 1.0em;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+

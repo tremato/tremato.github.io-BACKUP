@@ -7,9 +7,9 @@ body {
 	background-color: #faf8f8;
 }
 
-form, input[type="search"], select[multiple="multiple"]  {font-family:  'Alegreya', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
+/*form, input[type="search"], select[multiple="multiple"]  {font-family:  'Alegreya', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
 
-/*body {
+body {
   background: #ffffff;
   color: #333333;
   font-size: 0.875em;
@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5 {
   background-color: #b24;
 }
 
-a {color: #b24; text-decoration:none;}
-a:hover {text-decoration:underline;}
+a {color: #d80000; text-decoration:none;}
+a:hover {color: #0000ff; text-decoration:underline;}
 
 
 
@@ -41,9 +41,9 @@ img,
 	border-radius: 3px;
 }
 
-nav {font-family: 'Alegreya SC';}
+nav {font-family: 'Nunito';}
 
-.hd {font-family: 'Alegreya'; }
+.hd {font-family: 'Nunito'; }
 
 .caps {text-transform: lowercase;
 font-family: 'Alegreya SC'; }
@@ -95,8 +95,8 @@ h2 {border-bottom: 1px solid #ecc;}
 }  
 
 
-#topbar .navbar {padding-bottom:12px; font-size:110%; font-family:Impact;} 
-#topbar li a {color: #008080;}
+#topbar .navbar {padding-bottom:12px; font-size:110%; font-family:Nunito, Helvetica, Arial, sans-serif;} 
+#topbar li a:hover {text-decoration:none;}
 #topbar li span a {color: #fff;}
 
 .avatar {

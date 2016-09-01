@@ -35,7 +35,8 @@
 	<header>
 		<nav class="navbar">
 			<ul>
-				<li><a href="/"><img src="/img/logo.png"></a></li>
+			    <li><a href="/"><img src="/img/logo.png"></a></li>
+			    <li><a href="/favourites"><img src="/img/favourite.png" title="Favourites"><sup style="color: #ff3377; font-size: 0.8em;" class="simpleCart_quantity"></sup></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -61,7 +62,7 @@
 </div>
 <div class="unit-66">
 <h4><strong><em>Schistosoma mansoni</em></strong></h4>
-<h5>Stats</h5>
+<h5 style="color: black;">Stats</h5>
 <ul>
 <li>11,828 transcripts</li>
 <li>8,480 with conserved domain(s)</li>
@@ -74,6 +75,7 @@
 </div>
 </div>
 
+    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
     <script type="text/javascript">
@@ -160,7 +162,7 @@
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» " + result.title
+                text: result.title
             }));
             $results.append($result);
         });
@@ -173,6 +175,7 @@
         initUI();
     });
     </script>
+
 
 
 </body>

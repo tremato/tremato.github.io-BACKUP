@@ -38,6 +38,7 @@
 		<nav class="navbar">
 			<ul>
 				<li><a href="/"><img src="/img/logo.png"></a></li>
+				<li><a href="/favourites"><img src="/img/favourite.png" title="Favourites"><sup style="color: #ff3377; font-size: 0.8em;" class="simpleCart_quantity"></sup></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -46,16 +47,20 @@
 
 
 <div class="wrapper">
-<div class="units-row">		
+<div class="units-row simpleCart_shelfItem">		
 	
 <div class="unit-20 dateblock"><h4><strong>Smp_174430</strong></h4>
-(<em>Smp_174430.1</em>)<br>
-<a href="http://www.genedb.org/featureSeq/Smp_174430" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i>
-<br><br><br>
+(<em><span  class="item_name">Smp_174430.1</span></em>)<br>
+<a href="http://www.genedb.org/featureSeq/Smp_174430" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br><br>
+
+<div><a style="color: #ff3377;" class="item_add" href="javascript:;">add to <i class="fa fa-heart"></i></a></div><br>
+
+        <div style="display: none;" class="item_link">/sm/Smp_174430.1/</div>
+
 	<div>Search<br>
 	  <input type="search" id="search" maxlength="255" placeholder="Smp_ number"><br>
 	<p id="results"></p>
-	</div><br><br>
+	</div>
 	<div>Data Sources<br>
 	<a href='http://parasite.wormbase.org/' target=_blank>WB Parasite</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br>
 	<a href='http://genedb.org/' target=_blank>GeneDB</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br>
@@ -68,8 +73,8 @@
 <div class="unit-66">
 <h4 style="color:#008000;">Basic Info</h4>
 <p>Organism: <a href="/sm/"><em>Schistosoma mansoni</em></a><br>
-Description: <strong>hypothetical protein</strong><br>
-Length: <strong>  3760</strong> (gene); &nbsp;<strong>374</strong> (<a href="https://raw.githubusercontent.com/tremato/sm-prot-fa/master/Smp_17/Smp_174430.1.fa">protein</a>)<br>
+Description: <strong class="item_description">hypothetical protein</strong><br>
+Length: <strong>  3760</strong> (gene); &nbsp;<strong class="item_aa">374</strong> (<a href="https://raw.githubusercontent.com/tremato/sm-prot-fa/master/Smp_17/Smp_174430.1.fa">protein</a>)<br>
 </p>
 
 <h4 style="color:#008000;">Database Tools</h4>
@@ -91,18 +96,21 @@ KEGG Ortholog<sup>**</sup>: <em>not found</em>
 <h4 style="color:#008000;">Differential Gene Expression</h4>
 Transcript plots based on various studies are shown below. Click on the figure to see the original publication.<br>
 <small>(No figure = Data not available.)</small>
+
+<center>
 <div>
     <figure>
      	<a href="http://www.nature.com/articles/srep31150" target=_blank><img class="img-responsive img-thumbnail" src="https://dl.dropboxusercontent.com/u/98419245/plots-ad/Smp_17/Smp_174430.1.png" style="border-style: none" width="48%"></a>
 	<a href=http://dx.doi.org/10.1371/journal.pntd.0001455 target=_blank><img class="img-responsive img-thumbnail" src="https://raw.githubusercontent.com/zgde/dge-plots/master/plots-la/Smp_17/Smp_174430.png" style="border-style: none" width="48%"></a>
-	<figcaption><center>(left) Lu, Z. et al. (2016) <em>Sci Rep</em>. <a href=http://www.nature.com/articles/srep31150 target=_blank>doi:10.1038/srep31150</a>; &nbsp;&nbsp; (right) Protasio, A. et al. (2012) <em>PLoS Negl Trop Dis</em>. <a href=http://dx.doi.org/10.1371/journal.pntd.0001455 target=_blank>doi:10.1371/journal.pntd.0001455</a></center></figcaption>
+	<figcaption>(left) Lu, Z. et al. (2016) <em>Sci Rep</em>. <a href=http://www.nature.com/articles/srep31150 target=_blank>doi:10.1038/srep31150</a>; &nbsp;&nbsp; (right) Protasio, A. et al. (2012) <em>PLoS Negl Trop Dis</em>. <a href=http://dx.doi.org/10.1371/journal.pntd.0001455 target=_blank>doi:10.1371/journal.pntd.0001455</a></figcaption>
     </figure>
     <figure>
      	<a href="http://dx.doi.org/10.1371/journal.pntd.0004334" target=_blank><img class="img-responsive img-thumbnail" src="https://raw.githubusercontent.com/zgde/dge-plots/master/plots-mfe/Smp_17/Smp_174430.1.png" style="border-style: none" width="48%"></a>
 <a href="http://dx.doi.org/10.1016/j.ijpara.2016.03.004" target=_blank><img class="img-responsive img-thumbnail" src="https://raw.githubusercontent.com/zgde/dge-plots/master/plots-fht/Smp_17/Smp_174430.png" style="border-style: none" width="48%"></a>
-	<figcaption><center>(left) Anderson et al. (2015) PLoS Negl Trop Dis. <a href=http://dx.doi.org/10.1371/journal.pntd.0004334 target=_blank>doi:10.1371/journal.pntd.0004334</a>; &nbsp;&nbsp; (right) Wang and Collins (2016) Int J Parasitol. <a href=http://dx.doi.org/10.1016/j.ijpara.2016.03.004 target=_blank>doi:10.1016/j.ijpara.2016.03.004</a></center></figcaption>
+	<figcaption>(left) Anderson et al. (2015) PLoS Negl Trop Dis. <a href=http://dx.doi.org/10.1371/journal.pntd.0004334 target=_blank>doi:10.1371/journal.pntd.0004334</a>; &nbsp;&nbsp; (right) Wang and Collins (2016) Int J Parasitol. <a href=http://dx.doi.org/10.1016/j.ijpara.2016.03.004 target=_blank>doi:10.1016/j.ijpara.2016.03.004</a></figcaption>
     </figure>
 </div>
+</center>
 
 
 </div>
@@ -110,7 +118,7 @@ Transcript plots based on various studies are shown below. Click on the figure t
 </div>
 </div>
 
-
+    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
     <script type="text/javascript">
@@ -197,7 +205,7 @@ Transcript plots based on various studies are shown below. Click on the figure t
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» " + result.title
+                text: result.title
             }));
             $results.append($result);
         });
@@ -210,6 +218,7 @@ Transcript plots based on various studies are shown below. Click on the figure t
         initUI();
     });
     </script>
+
 
 
 </body>

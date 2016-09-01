@@ -38,6 +38,7 @@
 		<nav class="navbar">
 			<ul>
 				<li><a href="/"><img src="/img/logo.png"></a></li>
+				<li><a href="/favourites"><img src="/img/favourite.png" title="Favourites"><sup style="color: #ff3377; font-size: 0.8em;" class="simpleCart_quantity"></sup></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -47,16 +48,20 @@
 
 
 <div class="wrapper">
-<div class="units-row">		
+<div class="units-row simpleCart_shelfItem">		
 	
 <div class="unit-20 dateblock"><h4><strong>Sjp_0075270</strong></h4>
-(<em>Sjp_0075270</em>) <br>
-<a href="http://www.genedb.org/featureSeq/Sjp_0075270" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i>
-<br><br><br>
+(<em><span class="item_name">Sjp_0075270</span></em>) <br>
+<a href="http://www.genedb.org/featureSeq/Sjp_0075270" target=_blank>Sequences</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br><br>
+
+<div><a style="color: #ff3377;" class="item_add" href="javascript:;">add to <i class="fa fa-heart"></i></a></div><br>
+
+        <div style="display: none;" class="item_link">/sj/Sjp_0075270/</div>
+
 	<div>Search<br>
 	  <input type="search" id="search" maxlength="255" placeholder="Sjp_ number"><br>
 	<p id="results"></p>
-	</div><br><br>
+	</div>
 	<div>Data Sources<br>
 	<a href='http://parasite.wormbase.org/' target=_blank>WB Parasite</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br>
 	<a href='http://genedb.org/' target=_blank>GeneDB</a> <i class="fa fa-external-link" style="font-size:60%;"></i><br>
@@ -69,8 +74,8 @@
 <div class="unit-66">
 <h4 style="color:#008080;">Basic Info</h4>
 <p>Organism: <a href="/sj/"><em>Schistosoma japonicum</em></a><br>
-Description: <strong></strong><br>
-Length: <strong>  5407</strong> (gene); &nbsp;<strong>245</strong> (<a href="https://raw.githubusercontent.com/tremato/sj-prot-fa/master/Sjp_007/Sjp_0075270.fa">protein</a>)<br>
+Description: <strong class="item_description"></strong><br>
+Length: <strong>  5407</strong> (gene); &nbsp;<strong class="item_aa">245</strong> (<a href="https://raw.githubusercontent.com/tremato/sj-prot-fa/master/Sjp_007/Sjp_0075270.fa">protein</a>)<br>
 </p>
 
 <h4 style="color:#008080;">Database Tools</h4>
@@ -96,7 +101,7 @@ KEGG Ortholog<sup>**</sup>: <em>not found</em>
 </div>
 </div>
 
-
+    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
     <script type="text/javascript">
@@ -183,7 +188,7 @@ KEGG Ortholog<sup>**</sup>: <em>not found</em>
             var $result = $("<li>");
             $result.append($("<a>", {
                 href: result.href,
-                text: "» " + result.title
+                text: result.title
             }));
             $results.append($result);
         });
@@ -196,6 +201,7 @@ KEGG Ortholog<sup>**</sup>: <em>not found</em>
         initUI();
     });
     </script>
+
 
 
 </body>

@@ -437,7 +437,7 @@ sub {
 figcaption {
   margin: .3em 0;
   font-size: 12.75px;
-  font-style: italic;
+  text-decoration: underline;
 }
 ins,
 u {
@@ -3652,6 +3652,6 @@ ul.dropdown li.divider {
   line-height: 3px;
   font-size: 1.0em;
   font-family: Helvetica, Arial, sans-serif;
-  width: 100%;
+  max-width: 100%;
 }
 
